@@ -1,4 +1,4 @@
-streamlit==1.48.0
-faster-whisper==1.2.0
-yt-dlp[default]>=2026.7.21
-deno>=2.9.3
+streamlit
+faster-whisper
+yt-dlp[default]
+deno>=2.3
