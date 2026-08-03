@@ -43,7 +43,7 @@ def find_clips(segs):
 
 def download_url(url,out):
     # Node is installed by packages.txt and is explicitly supplied to yt-dlp.
-    cmd=["yt-dlp","--js-runtimes","node","--no-playlist",
+    cmd=["yt-dlp","--js-runtimes","node:/usr/bin/nodejs","--no-playlist",
          "-f","bv*[height<=720]+ba/b[height<=720]","--merge-output-format","mp4",
          "-o",str(out),url]
     run(cmd)
